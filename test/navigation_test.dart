@@ -7,7 +7,7 @@ import 'package:testing_navigation/main_page.dart';
 class MockNavigatorObserver extends Mock implements NavigatorObserver {}
 
 void main() {
-  group('NavigationTestPage', () {
+  group('Navigation tests', () {
     NavigatorObserver mockObserver;
 
     setUp(() {
