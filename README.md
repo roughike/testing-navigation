@@ -1,8 +1,5 @@
 # testing_navigation
 
-A new Flutter application.
+A sample on how to test navigation events on Flutter.
 
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+[See the blogpost here](https://iirokrankka.com/2018/08/22/writing-widget-tests-for-navigation-events/).
