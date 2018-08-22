@@ -1,0 +1,14 @@
+name: testing_navigation
+description: A new Flutter application.
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mockito: 2.2.3
+
+flutter:
+  uses-material-design: true
