@@ -25,7 +25,7 @@ void main() {
 
       /// The tester.pumpWidget() call above just built our app widget
       /// and triggered the pushObserver method on the mockObserver once.
-      verify(mockObserver.didPush(typed(any), typed(any)));
+      verify(mockObserver.didPush(any, any));
     }
 
     Future<Null> _navigateToDetailsPage(WidgetTester tester) async {
@@ -44,7 +44,7 @@ void main() {
 
       /// By tapping the button, we should've now navigated to the details
       /// page. The didPush() method should've been called...
-      verify(mockObserver.didPush(typed(any), typed(any)));
+      verify(mockObserver.didPush(any, any));
 
       /// ...and there should be a DetailsPage present in the widget tree...
       expect(find.byType(DetailsPage), findsOneWidget);
@@ -62,7 +62,7 @@ void main() {
       /// Then we'll verify that the details route was pushed again, but
       /// this time, we'll capture the route.
       final Route pushedRoute =
-          verify(mockObserver.didPush(typed<Route>(captureAny), typed(any)))
+          verify(mockObserver.didPush(captureAny, any))
               .captured
               .single;
 
